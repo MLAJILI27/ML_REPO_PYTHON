@@ -1,9 +1,9 @@
 """
-Écrire un programme min_max.py, qui demande de saisir 2 valeurs et qui affiche la plus petite des 2 valeurs
+Write a program min_max.py, which asks 2 values eand display the smaller one
 """
 x= input('Please enter a number: ')
 y= input('Please enter a number: ')
 if x<y:
-    print('la petite valeur est ',x)
+    print('The smaller value is ',x)
 else:
-    print('la petite valeur est ',y)
+    print('The smaller value is ',y)
