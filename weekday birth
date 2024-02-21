@@ -1,0 +1,20 @@
+# Python program to ask the user his name and date of birth and display the exact date name he was born
+
+# Import the datetime module
+import datetime
+
+# Input from the user
+name = input('Enter your name: ')
+date_of_birth = input('Enter your date of birth in DD-MM-YYYY format: ')
+
+# Convert the date of birth to a datetime object
+date_of_birth = datetime.datetime.strptime(date_of_birth, '%d-%m-%Y')
+
+# Get the weekday name from the datetime object
+weekday_name = date_of_birth.strftime('%A')
+
+# Display the result
+print(f'{name}, you were born on a {weekday_name}.')
+
+# Ask the user to click enter to exit
+input('Press enter to exit.')
